@@ -3,7 +3,7 @@
 
 Name:           xmlrpc
 Version:        2.0.1
-Release:        %mkrel 4
+Release:        %mkrel 5
 Epoch:          0
 Summary:        Java XML-RPC implementation
 License:        Apache License
@@ -18,7 +18,7 @@ Requires:       junit >= 0:3.8.1
 BuildRequires:  java-gcj-compat-devel
 %endif
 BuildRequires:  ant
-BuildRequires:  jpackage-utils >= 0:1.5
+BuildRequires:  java-rpmbuild >= 0:1.5
 BuildRequires:  servletapi5
 BuildRequires:  junit >= 0:3.8.1
 BuildRequires:  commons-httpclient >= 0:2.0.2        
