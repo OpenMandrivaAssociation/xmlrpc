@@ -23,7 +23,6 @@ BuildRequires:  servletapi5
 BuildRequires:  junit >= 0:3.8.1
 BuildRequires:  commons-httpclient >= 0:2.0.2        
 BuildRequires:  commons-codec >= 0:1.3
-Buildroot:      %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Apache XML-RPC is a Java implementation of XML-RPC, a popular protocol
