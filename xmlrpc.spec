@@ -3,7 +3,7 @@
 
 Name:           xmlrpc
 Version:        2.0.1
-Release:        %mkrel 7
+Release:        %mkrel 8
 Epoch:          0
 Summary:        Java XML-RPC implementation
 License:        Apache License
