@@ -62,12 +62,12 @@ Provides:   %{name}3-server = 3.1.3-13
 
 %prep
 %setup -q -n apache-%{name}-%{version}-src
-%patch2 -b .sav
+%patch2
 pushd client
-%patch0 -b .sav
+%patch0
 popd
 pushd common
-%patch1 -b .sav
+%patch1
 popd
 
 sed -i 's/\r//' LICENSE.txt
