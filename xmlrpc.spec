@@ -1,9 +1,10 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           xmlrpc
 Version:        3.1.3
-Release:        7.0%{?dist}
+Release:        11.1
 Epoch:          1
 Summary:        Java XML-RPC implementation
+Group:		Development/Java
 License:        ASL 2.0
 URL:            http://ws.apache.org/xmlrpc/
 BuildArch:      noarch
@@ -12,6 +13,7 @@ Source0:        http://www.apache.org/dist/ws/xmlrpc/sources/apache-xmlrpc-%{ver
 Patch0:         %{name}-client-addosgimanifest.patch
 Patch1:         %{name}-common-addosgimanifest.patch
 Patch2:         %{name}-javax-methods.patch
+Patch3:		xmlrpc-server-addosgimanifest.patch
 
 BuildRequires:  maven-local
 BuildRequires:  mvn(org.apache:apache)
@@ -62,12 +64,15 @@ Provides:   %{name}3-server = 3.1.3-13
 
 %prep
 %setup -q -n apache-%{name}-%{version}-src
-%patch2
+%patch2 -p1
 pushd client
 %patch0
 popd
 pushd common
 %patch1
+popd
+pushd server
+%patch3
 popd
 
 sed -i 's/\r//' LICENSE.txt
