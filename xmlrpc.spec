@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           xmlrpc
 Version:        3.1.3
-Release:        11.1
+Release:        11.2
 Epoch:          1
 Summary:        Java XML-RPC implementation
 Group:		Development/Java
