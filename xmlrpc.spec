@@ -6,7 +6,7 @@ Epoch:          1
 Summary:        Java XML-RPC implementation
 Group:		Development/Java
 License:        ASL 2.0
-URL:            http://ws.apache.org/xmlrpc/
+URL:            https://ws.apache.org/xmlrpc/
 BuildArch:      noarch
 
 Source0:        http://www.apache.org/dist/ws/xmlrpc/sources/apache-xmlrpc-%{version}-src.tar.bz2
